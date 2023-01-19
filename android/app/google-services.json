@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "812830528051",
+    "project_id": "campapp-2f8b2",
+    "storage_bucket": "campapp-2f8b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812830528051:android:44480a5f5969a943290946",
+        "android_client_info": {
+          "package_name": "pl.pietkun.campapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812830528051-t9c0n1bke10lft1vbp3jqh3jbvn7v867.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb4unbEWdimiVhGBT8F7rNncaT2hdW104"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812830528051-t9c0n1bke10lft1vbp3jqh3jbvn7v867.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "812830528051-t58p0j8k29fksh76fdb3te0njuu3inha.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "pl.pietkun.campapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
