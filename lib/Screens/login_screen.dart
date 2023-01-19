@@ -5,6 +5,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import 'menu_screen.dart';
 
+//na probe 2 zmiana gita
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
