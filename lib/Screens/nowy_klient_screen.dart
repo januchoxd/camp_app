@@ -150,6 +150,8 @@ class _NowyKlientScreenState extends State<NowyKlientScreen> {
             const SizedBox(
               height: spaceBetweenOutlindedButtons,
             ),
+
+            //
             Card(
               child: ListTile(
                 leading: IconButton(

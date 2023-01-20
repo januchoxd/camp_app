@@ -1,13 +1,9 @@
 import 'package:campapp/Screens/login_screen.dart';
-import 'package:campapp/constants.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-//import 'package:firebase_core/firebase_core.dart';
-//import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import '../firebase_options.dart';
-import '../components/rounded_button.dart';
 
+/// Przenosi od razu do LoginScreen
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -22,19 +18,16 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme:
-          ThemeData(brightness: Brightness.dark, primaryColor: Colors.blueGrey),
-      title: 'CampApp',
-      home: const MyHomePage(title: 'Camp App'),
+      theme: ThemeData.dark(),
+      home: MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-
-  final String title;
-
+  const MyHomePage({
+    Key? key,
+  }) : super(key: key);
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
@@ -42,44 +35,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              OutlinedButton(
-                style: kOutlinedButtonStyl,
-                child: Text('Zaloguj jako właściciel'),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const LoginScreen()),
-                  );
-                },
-              ),
-              SizedBox(
-                height: spaceBetweenOutlindedButtons,
-              ),
-              OutlinedButton(
-                style: kOutlinedButtonStyl,
-                child: Text('Zaloguj jako pracownik'),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const LoginScreen()),
-                  );
-                },
-              ),
-            ],
-          ),
-        ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
+    return const LoginScreen();
   }
 }

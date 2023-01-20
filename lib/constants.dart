@@ -60,18 +60,18 @@ const kMessageContainerDecoration = BoxDecoration(
 );
 
 const kTextFieldDecoration = InputDecoration(
-  hintStyle: TextStyle(color: Colors.white),
+  hintStyle: TextStyle(color: Colors.white70),
   hintText: 'Wpisz wartość',
   contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 50),
   border: OutlineInputBorder(
     borderRadius: BorderRadius.all(Radius.circular(20.0)),
   ),
   enabledBorder: OutlineInputBorder(
-    borderSide: BorderSide(color: Colors.white, width: 1.0),
+    borderSide: BorderSide(color: Colors.white70, width: 2.0),
     borderRadius: BorderRadius.all(Radius.circular(15.0)),
   ),
   focusedBorder: OutlineInputBorder(
-    borderSide: BorderSide(color: Colors.white, width: 2.0),
+    borderSide: BorderSide(color: Colors.white70, width: 3.0),
     borderRadius: BorderRadius.all(Radius.circular(20.0)),
   ),
 );
@@ -79,8 +79,8 @@ const kTextFieldDecoration = InputDecoration(
 //ustawienia przycisków w menu Screen
 var kOutlinedButtonStyl = OutlinedButton.styleFrom(
     fixedSize: Size.fromWidth(300),
-    foregroundColor: Colors.white,
-    side: const BorderSide(width: 3, color: Colors.white),
+    foregroundColor: Colors.white70,
+    side: const BorderSide(width: 3, color: Colors.white70),
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
     padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 50));
 
