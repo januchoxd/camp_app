@@ -4,6 +4,7 @@ import 'baza_danych_screen.dart';
 import 'wyjezdzajacy_screen.dart';
 import 'ustawienia_screen.dart';
 import '../constants.dart';
+import 'mapa_screen.dart';
 
 class MenuScreen extends StatelessWidget {
   const MenuScreen({Key? key}) : super(key: key);
@@ -73,7 +74,12 @@ class MenuScreen extends StatelessWidget {
             ),
             OutlinedButton(
                 style: kOutlinedButtonStyl,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MapaScreen()),
+                  );
+                },
                 child: const Text('Mapa Campingu')),
             const SizedBox(
               height: spaceBetweenOutlindedButtons,
