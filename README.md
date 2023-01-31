@@ -1,11 +1,5 @@
 # Camp App
 
-A new Flutter project.
+Mobile cross-platform app using Dart language.
 
-
-CRM for Camping place owners
-
-
-
-123
-pierwsza zmiana na test
+Flutter Project
