@@ -6,6 +6,7 @@ import '../firebase_options.dart';
 /// Przenosi od razu do LoginScreen
 /// esa
 /// fasa
+/// //
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
