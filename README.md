@@ -2,4 +2,4 @@
 
 Mobile cross-platform app using Dart language.
 
-Flutter Project
+Do zarządzana polem namiotowym
